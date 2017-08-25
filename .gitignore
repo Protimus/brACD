@@ -1,0 +1,5 @@
+# We don't need a track of these folders by GIT [Protimus]
+assets/angular/*
+assets/bootstrap/*
+assets/jquery/*
+assets/popper.js/*
