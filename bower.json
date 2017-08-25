@@ -1,0 +1,31 @@
+{
+  "name": "bradev",
+  "description": "brAthena Central de Desenvolvimento",
+  "main": "assets/components/main.js",
+  "keywords": [
+    "brathena",
+    "central",
+    "de",
+    "desenvolvimento"
+  ],
+  "authors": [
+    "Rafael Gorges (Protimus) https://forum.brathena.org"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Protimus",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+    "components"
+  ],
+    "dependencies": {
+      "jquery": "~3.2.1",
+      "bootstrap": "~v4.0.0-beta",
+      "angular": "~1.6.6",
+      "font-awesome": "4.7.0"
+    }
+}
