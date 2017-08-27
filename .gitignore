@@ -1,5 +1,7 @@
-# We don't need a track of these folders by GIT [Protimus]
-assets/angular/*
-assets/bootstrap/*
-assets/jquery/*
-assets/popper.js/*
+# Não precisamos que as bibliotecas sejam enviadas ao GIT.
+# Elas devem ser baixadas pelo usuário através do bower [Protimus]
+assets/components/angular/*
+assets/components/bootstrap/*
+assets/components/jquery/*
+assets/components/popper.js/*
+assets/components/font-awesome/*
