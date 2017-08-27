@@ -25,25 +25,25 @@
     		<!-- Criando a coluna para formulário de login -->
     		<div class="col-lg-offset-6 brathena-form" align="center">
     			<!-- Criando formulário de login -->
-        		<form class="loginForm" ng-submit="submitLogin()" role="form" name="loginForm" novalidate>
-       				<div class="form-group col-md-9" ng-class="{ 'has-error' : loginForm.email.$invalid && !loginForm.email.$pristine }">
+        		<form class="regForm" ng-submit="submitReg()" role="form" name="regForm" novalidate>
+       				<div class="form-group col-md-9" ng-class="{ 'has-error' : regForm.email.$invalid && !regForm.email.$pristine }">
             			<label><span class="fa fa-user-o">&nbsp;</span>Email</label>
-            			<input type="email" name="email" class="form-control input-group-sm" placeholder="Informe seu endereço de email" ng-model="user.email" required>
-            			<p ng-show="loginForm.email.$invalid && !loginForm.email.$pristine" class="help-block">Para continuar é preciso informar um email.</p>
+            			<input type="email" name="email" class="form-control input-group-sm" placeholder="Digite um email válido" ng-model="user.email" required>
+            			<p ng-show="regForm.email.$invalid && !regForm.email.$pristine" class="help-block">Para cadastrar é preciso informar um email.</p>
         			</div>
-        			<div class="form-group col-md-9" ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+        			<div class="form-group col-md-9" ng-class="{ 'has-error' : regForm.password.$invalid && !regForm.password.$pristine }">
             			<label><span class="fa fa-key">&nbsp;</span>Senha</label>
-            			<input type="text" name="password" class="form-control" placeholder="Informe a sua senha" ng-model="user.password" required>
-            			<p ng-show="loginForm.password.$invalid && !loginForm.password.$pristine" class="help-block">Para continuar é preciso informar uma senha.</p>
+            			<input type="text" name="password" class="form-control" placeholder="Digite uma senha" ng-model="user.password" required>
+            			<p ng-show="regForm.password.$invalid && !regForm.password.$pristine" class="help-block">Para cadastrar é preciso informar uma senha.</p>
             		</div>
-              		<div class="col-sm-6">
-        				<div class="forgot">
-        					<span><a href="" class="external">Esqueceu sua senha?</a><br>
-        					<a href="registar.html" class="external">Não tem uma conta? Cadastre-se </a></span>
-      					</div>
-      				</div>
+        			<div class="form-group col-md-9" ng-class="{ 'has-error' : regForm.date.$invalid && !regForm.date.$pristine }">
+            			<label><span class="fa fa-birthday-cake">&nbsp;</span>Nascimento</label>
+            			<input type="date" name="birthday" class="form-control" placeholder="Digite uma senha" ng-model="user.birthday" required>
+            			<p ng-show="regForm.birthday.$invalid && !regForm.birthday.$pristine" class="help-block">Para cadastrar é preciso informar sua data de nascimento.</p>
+            		</div>
       				<div class="col-sm-6">
-        				<button type="submit" class="btn btn-custom col-sm-offset-3" ng-disabled="loginForm.$invalid">Entrar</button>
+        				<button type="button" class="btn btn-custom col-sm-offset-3" ng-click="reset()" value="Reset">Resetar</button>
+        				<button type="submit" class="btn btn-custom col-sm-offset-10" ng-disabled="regForm.$invalid">Cadastrar</button>
         			</div>
         		</form> 
     		</div>
