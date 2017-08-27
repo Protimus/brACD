@@ -10,7 +10,7 @@
 </head>
 <body>
 	<!-- Criando o container -->
-	<div ng-app class="container">
+	<div ng-app="brApp" ng-controller="formController" class="container">
 		<!-- Atribuindo à classe para que não exista espaçamento entre as colunas -->
     	<div class="row justify-content-center login-page">
     		<!-- Criando columa de informações com logo e texto -->
@@ -25,43 +25,39 @@
     		<!-- Criando a coluna para formulário de login -->
     		<div class="col-lg-offset-6 brathena-form" align="center">
     			<!-- Criando formulário de login -->
-        		<form class="loginForm" ng-submit="submitLoginForm()" role="form" name="loginForm" novalidate>
-        			<div class="form-group" align="center" ng-class="{'has-error': loginForm.emailId.$touched && loginForm.emailId.$error.email , 'has-success': loginForm.emailId.$valid}" >
-            			<label for="dob" class="col-sm-3 control-label external"><span class="fa fa-user-o">&nbsp;</span>Email</label>
-            			<div class="col-sm-6">
-                			<input type="email" id="dob" name="emailId" class="form-control" ng-model="email" placeholder="Por favor, digite seu email">
-           				</div>
-            			<div class="col-sm-3">
-                			<span class="help-block" ng-show="loginForm.emailId.$touched && loginForm.emailId.$error.email"></span>
-            			</div>
-          			</div>
-          			<div class="form-group" ng-class="{'has-error': loginForm.password.$touched && loginForm.password.$error.required , 'has-success':  loginForm.password.$valid }">
-            			<label for="password" class="col-sm-3 control-label external"><span class="fa fa-key">&nbsp;</span>Senha</label>
-              			<div class="col-sm-6">
-                			<input type="text" id="password" name="password" class="form-control" placeholder="Por favor, digite sua senha" ng-model="password" required>
-              			</div>
-              			<div class="col-sm-6">
-                			<span class="help-block" ng-show="loginForm.password.$touched && loginForm.password.$error.required"></span>
-        					<div class="forgot">
-        						<span><a href="" class="external">Esqueceu sua senha?</a><br>
-        						<a href="register.html" class="external">Não tem uma conta? Cadastre-se </a></span>
-      						</div>
+        		<form class="loginForm" ng-submit="submitLogin()" role="form" name="loginForm" novalidate>
+       				<div class="form-group col-md-8" ng-class="{ 'has-error' : loginForm.email.$invalid && !loginForm.email.$pristine }">
+            			<label><span class="fa fa-user-o">&nbsp;</span>Email</label>
+            			<input type="email" name="email" class="form-control input-group-sm" ng-model="user.email">
+            			<p ng-show="loginForm.email.$invalid && !loginForm.email.$pristine" class="help-block">Por favor, digite um email válido.</p>
+        			</div>
+        			<div class="form-group col-md-8" ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+            			<label><span class="fa fa-key">&nbsp;</span>Senha</label>
+            			<input type="text" name="password" class="form-control" ng-model="user.password" required>
+            			<p ng-show="loginForm.password.$invalid && !loginForm.password.$pristine" class="help-block">Por favor, digite uma senha.</p>
+            		</div>
+              		<div class="col-sm-6">
+        				<div class="forgot">
+        					<span><a href="" class="external">Esqueceu sua senha?</a><br>
+        					<a href="registar.html" class="external">Não tem uma conta? Cadastre-se </a></span>
       					</div>
-      					<div class="col-sm-6">
-        					<input type="submit" value="Entrar" class="btn btn-custom col-sm-offset-3">
-        				</div>
-        				<!-- Espaço reservado para adição futura de captcha -->
+      				</div>
+        			<!-- Espaço reservado para adição futura de captcha -->
+      				<div class="col-sm-6">
+        				<button type="submit" class="btn btn-custom col-sm-offset-3" ng-disabled="loginForm.$invalid">Entrar</button>
         			</div>
         		</form> 
     		</div>
 			<p>Desenvolvido por <a href="https://forum.brathena.org" class="external">Protimus</a><br>Todos os direitos reservados. brAthena &copy 2017</p>
   		</div>
 	</div>
-  <!-- Leitura de JavaScript -->
-  <script src="../assets/components/jquery/dist/jquery.min.js"></script>
-  <script src="../assets/components/popper.js/dist/popper.js"></script>
-  <script src="../assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
-  <script src="../assets/components/brathena/text-animate.js"></script>
-  <script src="../assets/components/angular/angular.min.js"></script>
+	<!-- Leitura de JavaScript -->
+	<script src="../assets/components/jquery/dist/jquery.min.js"></script>
+	<script src="../assets/components/popper.js/dist/popper.js"></script>
+	<script src="../assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="../assets/components/angular/angular.min.js"></script>
+	<!-- Leitura de controladores e javascripts específicos -->
+	<script src="../assets/components/brathena/formControl.js"></script>
+	<script src="../assets/components/brathena/text-animate.js"></script>
   </body>
 </html>

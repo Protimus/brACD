@@ -99,9 +99,16 @@ body {
 }
 
 /* Estilização dos inputs para formulário de login e registro */
-input { box-shadow: 0 0 3px green; margin: 0px }
+input { 
+	box-shadow: 0 0 3px green; 
+	margin: 0px;
+}
 
-input:focus, textarea:focus { outline: none !important; border-color: yellow; box-shadow: 0 0 10px pink; }
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #556B2F;
+    box-shadow: 0 1px 1px green, 0 0 8px green;
+    outline: 0 none;
+}
 
 /* Formulário de registro */
 .regForm {
@@ -112,12 +119,13 @@ input:focus, textarea:focus { outline: none !important; border-color: yellow; bo
 /* Formulário de login */
 .loginForm {
 	width: 500px;
-	margin-top: 100px;
+	margin-top: 80px;
 }
 
 /* Erros do input */
 .help-block {
 	color: red;
+	display: inline;
 }
 
 /* Perda de senha */
