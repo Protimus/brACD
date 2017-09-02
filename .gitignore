@@ -5,3 +5,5 @@ assets/components/bootstrap/*
 assets/components/jquery/*
 assets/components/popper.js/*
 assets/components/font-awesome/*
+assets/components/chart.js/*
+assets/components/angular-chart.js/*

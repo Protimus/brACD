@@ -234,3 +234,88 @@ fieldset[disabled] .btn-custom.active {
 	border-color: black;
 	box-shadow: none;
 }
+
+/*-------------------------------------------
+	Página de estatísticas
+/*----------------------------------------- */
+
+.statistic h1 {
+	display:table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 30px;
+	color: green;
+	font-weight: bold;
+	font-family: verdana;
+}
+
+.graphics-content {
+	margin-top: 80px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.translation-status {
+	width: 100%;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	background: rgba(108, 154, 81, 1);
+	border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	border: 1px solid #2c3229;
+}
+
+.chart-pie {
+	margin-top: 10px;
+}
+
+.translation-status p {
+	margin-top: 5px;
+	color: white;
+	font-weight: bold;
+}
+
+.bug-status {
+	width: 100%;
+	height: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #e2e5e1;
+	border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	border: 1px solid #2c3229;
+}
+
+.chart-bar {
+	margin-top: 25px;
+}
+
+.bug-status p {
+	color: green;
+	font-weight: bold;
+}
+
+.meta-status {
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background: #edf1eb;
+	border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	border: 1px solid #2c3229;
+}
+
+.chart-horizontal-bar {
+	margin-top: 30px;
+}
+
+.meta-status p {
+	margin-top: 10px;
+	color: #beac12;
+	font-weight: bold;
+}
