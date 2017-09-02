@@ -261,7 +261,7 @@ fieldset[disabled] .btn-custom.active {
 	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	background: rgba(108, 154, 81, 1);
+	background: #edf1eb;
 	border-radius: 13px 13px 13px 13px;
 	-moz-border-radius: 13px 13px 13px 13px;
 	-webkit-border-radius: 13px 13px 13px 13px;
@@ -274,7 +274,7 @@ fieldset[disabled] .btn-custom.active {
 
 .translation-status p {
 	margin-top: 5px;
-	color: white;
+	color: #ea8809;
 	font-weight: bold;
 }
 
@@ -283,7 +283,7 @@ fieldset[disabled] .btn-custom.active {
 	height: 200px;
 	margin-left: auto;
 	margin-right: auto;
-	background: #e2e5e1;
+	background: #edf1eb;
 	border-radius: 13px 13px 13px 13px;
 	-moz-border-radius: 13px 13px 13px 13px;
 	-webkit-border-radius: 13px 13px 13px 13px;

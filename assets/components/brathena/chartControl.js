@@ -1,11 +1,28 @@
 // Criação de uma aplicação angular
 var brAChart = angular.module('brAChart', ['chart.js']);
 
-
 // Atribuindo cores padrões ao CharJS
-(function (ChartJsProvider) {
-  ChartJsProvider.setOptions({ colors : [ '#803690', '#00ADF9', '#DCDCDC', '#46BFBD', '#FDB45C', '#949FB1', '#4D5360'] });
-}); 
+brAChart.config(['ChartJsProvider', function (ChartJsProvider) {
+Chart.defaults.global.colors = [
+  {
+    //backgroundColor: 'rgba(78, 180, 189, 1)',
+    backgroundColor: 'rgba(108, 154, 81, 1)',
+    pointBackgroundColor: 'rgba(108, 154, 81, 1)',
+    pointHoverBackgroundColor: 'rgba(151,187,205,1)',
+    borderColor: 'rgba(0,0,0,0',
+    pointBorderColor: '#fff',
+    pointHoverBorderColor: 'rgba(151,187,205,1)'
+  }, {
+    backgroundColor: 'rgba(229, 229, 229, 1)',
+    pointBackgroundColor: 'rgba(229, 229, 229, 1)',
+    pointHoverBackgroundColor: 'rgba(151,187,205,1)',
+    borderColor: 'rgba(0,0,0,0',
+    pointBorderColor: '#fff',
+    pointHoverBorderColor: 'rgba(151,187,205,1)'}];
+}]);
+
+//var colors = angular.copy(scope.chartColors || ChartJs.getOptions(type).chartColors || Chart.defaults.global.colors);
+
 
 // Controlador em pizza - Nível de traduções
 brAChart.controller("TransCtrl", function ($scope) {
@@ -28,9 +45,8 @@ brAChart.controller("BugsCtrl", function ($scope) {
 brAChart.controller("MetasCtrl", function ($scope) {
     $scope.labels = ['brACP', 'brAEditor', 'brAPatcher', 'brACD'];
     $scope.series = ['Concluído'];
-
+    $scope.colours = ['#72C02C', '#3498DB', '#717984', '#F1C40F'];
     $scope.data = [
-      [65, 59, 80, 81, 56, 55, 40],
-      [28, 48, 40, 19, 86, 27, 90]
+      [80,10,40,60]
     ];
 });
