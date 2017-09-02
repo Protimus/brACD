@@ -28,19 +28,37 @@ CREATE TABLE IF NOT EXISTS `user_group` (
 - Status 3 = Conclusão de tradução **/
 CREATE TABLE IF NOT EXISTS `translation` (
 	`tid`	int(10) unsigned NOT NULL AUTO_INCREMENT,
-	`uid` 	int(10) unsigned NOT NULL,
 	`tstatus` smallint(2) NOT NULL,
 	`tname`	varchar(30) NOT NULL,
 	PRIMARY KEY	(`tid`),
-	FOREIGN KEY (`uid`) REFERENCES `user`(`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
+/** Cria a tabela de vinculação da tradução com usuário **/
+CREATE TABLE IF NOT EXISTS `user_translation` (
+	`tid`	int(10) unsigned NOT NULL AUTO_INCREMENT,
+	`uid` 	int(10) unsigned NOT NULL,
+	`tdate` date NOT NULL,
+	FOREIGN KEY (`uid`) REFERENCES `user`(`uid`),
+FOREIGN KEY (`tid`) REFERENCES `translation`(`tid`),
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+/** Cria a tabela de bugs **/
 CREATE TABLE IF NOT EXISTS `bugs` (
-	`big`	int(10) unsigned NOT NULL AUTO_INCREMENT,
+	`bid`	int(10) unsigned NOT NULL AUTO_INCREMENT,
 	`btitle`	varchar(30) NOT NULL, 
 	`bstatus`	smallint(2) NOT NULL,
 	`bauthor`	int(10) unsigned NOT NULL,
-	PRIMARY KEY (`big`),
+	PRIMARY KEY (`bid`),
+	FOREIGN KEY (`bauthor`) REFERENCES `user`(`uid`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
+
+
+/** Cria a tabela de postagem em bugs **/
+CREATE TABLE IF NOT EXISTS `bugs_post` (
+	`bid`	int(10) unsigned NOT NULL,
+	`bpost`	varchar(30) NOT NULL, 
+	`bauthor`	int(10) unsigned NOT NULL,
+	FOREIGN KEY (`big`) REFERENCES `bid`(`bid`),
 	FOREIGN KEY (`bauthor`) REFERENCES `user`(`uid`)
 ) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci AUTO_INCREMENT=1;
 
