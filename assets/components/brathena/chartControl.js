@@ -9,14 +9,14 @@ Chart.defaults.global.colors = [
     backgroundColor: 'rgba(108, 154, 81, 1)',
     pointBackgroundColor: 'rgba(108, 154, 81, 1)',
     pointHoverBackgroundColor: 'rgba(151,187,205,1)',
-    borderColor: 'rgba(0,0,0,0',
+    borderColor: 'rgba(0,0,0,0)',
     pointBorderColor: '#fff',
     pointHoverBorderColor: 'rgba(151,187,205,1)'
   }, {
     backgroundColor: 'rgba(229, 229, 229, 1)',
     pointBackgroundColor: 'rgba(229, 229, 229, 1)',
     pointHoverBackgroundColor: 'rgba(151,187,205,1)',
-    borderColor: 'rgba(0,0,0,0',
+    borderColor: 'rgba(0,0,0,0)',
     pointBorderColor: '#fff',
     pointHoverBorderColor: 'rgba(151,187,205,1)'}];
 }]);
@@ -45,7 +45,6 @@ brAChart.controller("BugsCtrl", function ($scope) {
 brAChart.controller("MetasCtrl", function ($scope) {
     $scope.labels = ['brACP', 'brAEditor', 'brAPatcher', 'brACD'];
     $scope.series = ['Concluído'];
-    $scope.colours = ['#72C02C', '#3498DB', '#717984', '#F1C40F'];
     $scope.data = [
       [80,10,40,60]
     ];

@@ -50,22 +50,7 @@
 					<div class="container">
 						<div class="col-lg-15 info-content">
 							<div class="container-fluid">
-								<div class="statistic"><h1>ESTATÍSTICAS DE DESENVOLVIMENTO</h1></div>
-								<div ng-app="brAChart" class="row graphics-content">
-									<div ng-controller="TransCtrl" class="col-sm-2 translation-status">
-										<canvas id="pie" class="chart chart-pie" color="chartParams.colours" chart-data="data" chart-options="options" chart-labels="labels"></canvas>
-										<p>Traduções</p>
-									</div>
-									<div ng-controller="BugsCtrl" class="col-sm-3 bug-status">
-										<canvas id="bar" class="chart chart-bar" chart-data="data" chart-options="options" chart-labels="labels" chart-series="series">
-										</canvas>
-										<p>brAthena</p>
-									</div>
-									<div ng-controller="MetasCtrl" class="col-sm-3 meta-status">
-										<canvas id="base" class="chart chart-horizontal-bar" chart-data="data" chart-options="options" chart-labels="labels"></canvas>
-										<p>Projetos</p>
-									</div>
-								</div>
+								<div class="trad"><h1>TRADUÇÕES</h1></div>
 							</div>
 						</div>
 					</div>
@@ -80,10 +65,7 @@
 	<script src="../assets/components/popper.js/dist/umd/popper.min.js"></script>
 	<script src="../assets/components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="../assets/components/angular/angular.min.js"></script>
-	<script src="../assets/components/chart.js/dist/Chart.min.js"></script>
-	<script src="../assets/components/angular-chart.js/dist/angular-chart.min.js"></script>
 	<!-- Leitura de controladores e javascripts específicos -->
 	<script src="../assets/components/brathena/formControl.js"></script>
-	<script src="../assets/components/brathena/chartControl.js"></script>
 	<script src="../assets/components/brathena/text-animate.js"></script>
 </html>

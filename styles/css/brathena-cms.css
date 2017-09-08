@@ -239,6 +239,7 @@ fieldset[disabled] .btn-custom.active {
 	Página de estatísticas
 /*----------------------------------------- */
 
+/* Título de conteúdo */
 .statistic h1 {
 	display:table;
 	margin-left: auto;
@@ -248,14 +249,18 @@ fieldset[disabled] .btn-custom.active {
 	color: green;
 	font-weight: bold;
 	font-family: verdana;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
 }
 
+/* Container dos gráficos */
 .graphics-content {
 	margin-top: 80px;
 	margin-right: auto;
 	margin-left: auto;
 }
 
+/* Estatísticas de Traduções */
 .translation-status {
 	width: 100%;
 	height: 200px;
@@ -274,10 +279,12 @@ fieldset[disabled] .btn-custom.active {
 
 .translation-status p {
 	margin-top: 5px;
-	color: #ea8809;
+	color: #beac12;
 	font-weight: bold;
 }
 
+
+/* Estatísticas de Bugs */
 .bug-status {
 	width: 100%;
 	height: 200px;
@@ -295,10 +302,11 @@ fieldset[disabled] .btn-custom.active {
 }
 
 .bug-status p {
-	color: green;
+	color: #beac12;
 	font-weight: bold;
 }
 
+/* Estatísticas de Metas */
 .meta-status {
 	width: 100%;
 	margin-left: auto;
@@ -318,4 +326,60 @@ fieldset[disabled] .btn-custom.active {
 	margin-top: 10px;
 	color: #beac12;
 	font-weight: bold;
+}
+
+
+/*-------------------------------------------
+	Página de traduções
+/*----------------------------------------- */
+
+/* Título de conteúdo */
+.trad h1 {
+	display:table;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	font-size: 30px;
+	color: green;
+	font-weight: bold;
+	font-family: verdana;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/* Container de traduções */
+.trad-content {
+	margin-top: 30px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/*  Envio de traduções */
+.trad-enviar {
+	width: 100%;
+	height: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	background: #edf1eb;
+	border-radius: 13px 13px 13px 13px;
+	-moz-border-radius: 13px 13px 13px 13px;
+	-webkit-border-radius: 13px 13px 13px 13px;
+	border: 1px solid #2c3229;
+}
+
+.trad-enviar p {
+	margin-top: 10px;
+	color: black;
+	font-weight: bold;	
+	font-size: 12px
+}
+
+.tradForm-send {
+	margin-top: 50px;
+	margin-left: 50px;
+	margin-right: auto;
+}
+
+.tradForm-send button {
+	margin-top: 30px;
 }
