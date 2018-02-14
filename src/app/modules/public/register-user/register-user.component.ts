@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { PublicService } from 'app/modules/public/services/public.service';
 
 @Component({
   selector: 'app-register-user',
@@ -8,7 +9,9 @@ import { Router } from '@angular/router';
 })
 export class RegisterUserComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+  constructor(private _router: Router, private _publicService: PublicService) { 
+    this._publicService.add({show:false})
+  }
 
   ngOnInit() {
   }

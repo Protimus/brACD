@@ -10,6 +10,7 @@ import { RouterModule } from '@angular/router';
 import { routing } from './public.routes';
 import {TypewriterDirective} from './../../directives/typewriter.directive'
 import { CommonModule } from '@angular/common';
+import {PublicService} from './services/public.service'
 
 
 @NgModule({
@@ -17,7 +18,7 @@ import { CommonModule } from '@angular/common';
     PublicComponent, LoginComponent,ForgotPasswordComponent,RegisterUserComponent, TypewriterDirective
   ],
   imports: [CommonModule,routing],
-  providers: [],
+  providers: [PublicService],
   bootstrap: [PublicComponent]
 })
 export class PublicModule { }

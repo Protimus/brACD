@@ -9,12 +9,11 @@ import { PublicComponent } from 'app/modules/public/public.component';
 
 const PUBLIC_ROUTES: Routes = [
     {path: '', component: PublicComponent, children:[
-        {path: 'login', component: LoginComponent},
+        {path: '', component: LoginComponent},
         {path: 'register', component: RegisterUserComponent},
         {path: 'forgot-password', component: ForgotPasswordComponent}
     ]},
-    {path: '', redirectTo: 'login'},
-    {path: '**', redirectTo: 'login'}
+    {path: '**', redirectTo: ''}
 ]
 
 export const routing: ModuleWithProviders = RouterModule.forChild(PUBLIC_ROUTES);

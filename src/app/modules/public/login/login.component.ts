@@ -1,5 +1,6 @@
 import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { Router } from '@angular/router';
+import { PublicService } from 'app/modules/public/services/public.service';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,11 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  @Output() onChangeUrl = new EventEmitter<string>();
 
-  constructor(private _router: Router) { }
-
-  ngOnInit() {
-    console.log(this._router.url.split("/")[1]);
-    this.onChangeUrl.emit(this._router.url.split("/")[1])
+  constructor(private _router: Router, private publicService: PublicService) { 
+      this.publicService.add({show: true})
   }
+
+  ngOnInit() {  }
 
 }

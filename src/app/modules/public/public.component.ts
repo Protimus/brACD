@@ -1,5 +1,6 @@
 import {Component, OnInit, OnChanges} from '@angular/core'
 import { Router } from '@angular/router';
+import { PublicService } from 'app/modules/public/services/public.service';
 
 
 
@@ -16,10 +17,17 @@ export class PublicComponent implements OnInit, OnChanges{
         "Ajude na criação de projetos."
     ]
     showForgotAndRegister: boolean = true;
+    year: number;
 
-    constructor(private _router: Router){}
+    constructor(private _router: Router, private _publicService: PublicService){
+        this._publicService.add$.subscribe(data=>{
+            this.showForgotAndRegister = data.show;
+        })
+    }
 
-    ngOnInit(){}
+    ngOnInit(){
+        this.year = new Date().getFullYear();
+    }
 
     ngOnChanges(){
         console.log("CHANGES")
@@ -27,14 +35,12 @@ export class PublicComponent implements OnInit, OnChanges{
 
     goToForgot(event){
         event.preventDefault();
-        this.showForgotAndRegister = false;
         this._router.navigate(['forgot-password'])
         
     }
 
     goToRegister(event){
         event.preventDefault();
-        this.showForgotAndRegister = false;
         this._router.navigate(['register'])
     }
 
