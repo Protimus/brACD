@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { }
+  @Output() onChangeUrl = new EventEmitter<string>();
+
+  constructor(private _router: Router) { }
 
   ngOnInit() {
+    console.log(this._router.url.split("/")[1]);
+    this.onChangeUrl.emit(this._router.url.split("/")[1])
   }
 
 }

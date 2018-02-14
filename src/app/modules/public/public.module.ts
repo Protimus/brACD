@@ -9,13 +9,14 @@ import {RegisterUserComponent} from './register-user/register-user.component'
 import { RouterModule } from '@angular/router';
 import { routing } from './public.routes';
 import {TypewriterDirective} from './../../directives/typewriter.directive'
+import { CommonModule } from '@angular/common';
 
 
 @NgModule({
   declarations: [
     PublicComponent, LoginComponent,ForgotPasswordComponent,RegisterUserComponent, TypewriterDirective
   ],
-  imports: [routing],
+  imports: [CommonModule,routing],
   providers: [],
   bootstrap: [PublicComponent]
 })

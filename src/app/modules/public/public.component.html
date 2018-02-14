@@ -8,7 +8,7 @@
                 <div class="brathena-logo">
                     <img src="../../../assets/images/logo.png" class="img-fluid">
                     <div class="brathena-text centered">
-                            <h3 typewriter [toType]="codeNames" startDelay="1000" delay="500" includePipe="true" fastDelete="true"></h3>
+                            <h3 typewriter [toType]="texts" startDelay="1000" delay="500" includePipe="true" fastDelete="true"></h3>
                     </div>
                 </div>
             </div>
@@ -17,17 +17,17 @@
                <router-outlet></router-outlet>
                <div class="col-sm-6">
                     <div class="forgot">
-                        <span>
-                            <a href="" class="external">Esqueceu sua senha?</a>
+                        <span *ngIf="showForgotAndRegister">
+                            <a href="#" (click)="goToForgot($event)" class="external">Esqueceu sua senha?</a>
                             <br>
-                            <a href="registrar.html" class="external">Não tem uma conta? Cadastre-se </a>
+                            <a href="#" (click)="goToRegister($event)" class="external">Não tem uma conta? Cadastre-se </a>
                         </span>
                     </div>
                 </div>
             </div>
-            <p>Desenvolvido por
-                <a href="https://forum.brathena.org" class="external">Protimus</a>
-                <br>Todos os direitos reservados. brAthena &copy 2017</p>
         </div>
+        <p>Desenvolvido por
+            <a href="https://forum.brathena.org" class="external">Protimus</a>
+            <br>Todos os direitos reservados. brAthena &copy 2017</p>
     </div>
 </div>
