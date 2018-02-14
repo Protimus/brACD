@@ -1,28 +1,26 @@
-# BrACD
+# ![brAthena](https://camo.githubusercontent.com/3858b95c804ef39869049d97ced55510a8450685/68747470733a2f2f692e696d6775722e636f6d2f49514b4b6254382e706e67)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.1.1.
+## Este projeto foi configurado com as seguintes tecnologias:<br>
+[Angular CLI](https://github.com/angular/angular-cli) versão 1.1.1.<br/>
+[NodeJS](https://nodejs.org/en/) versão v8.1.1<br/>
+[NPM](https://www.npmjs.com/) versão 5.6.0<br/>
 
-## Development server
+<h3>Ao clonar o projeto, não esqueça de instalar as dependencias com </h3>`npm install`
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Servidor de Desenvolvimento
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
+Execute `ng serve` para subir o servidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação irá recarregar automaticamente se você executar alguma mudança nos sources files
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Execute `ng build` para buildar o projeto. Os artefatos construidos sero armazenados no diretório `dist/` . Use `-prod` para gerar um build de produção.
 
-## Running unit tests
+## Executando testes unitários
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Digite `ng test` para executar testes unitrios via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+## Testes e2e
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-Before running the tests make sure you are serving the app via `ng serve`.
+Digite `ng e2e` para executar testes e2e via [Protractor](http://www.protractortest.org/).
+Antes de executar os testes, tenha certeza que você subiu o servidor com  `ng server`
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
