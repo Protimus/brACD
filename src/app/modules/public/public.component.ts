@@ -8,6 +8,12 @@ import {Component, OnInit} from '@angular/core'
 })
 export class PublicComponent implements OnInit{
 
+    codeNames = [
+        "Faça traduções para o emulador.", 
+        "Reporte erros no emulador.", 
+        "Ajude na criação de projetos."
+]
+
     constructor(){}
 
     ngOnInit(){}

@@ -6,12 +6,12 @@
         <input type="email" name="email" class="form-control input-group-sm" placeholder="Informe seu endereço de email" ng-model="user.email"
             required>
     </div>
-    <div class="form-group col-md-9" ng-class="{ 'has-error' : loginForm.password.$invalid && !loginForm.password.$pristine }">
+    <div class="form-group col-md-9">
         <label>
             <span class="fa fa-key">&nbsp;</span>Senha</label>
         <input type="text" name="password" class="form-control" placeholder="Informe a sua senha" ng-model="user.password" required>
     </div>
     <div class="col-sm-6">
-        <button type="submit" class="btn btn-custom col-sm-offset-3">Entrar</button>
+        <button type="submit" class="btn btn-default col-sm-offset-3">Entrar</button>
     </div>
 </form>
