@@ -1,0 +1,92 @@
+/*
+* brAthena Central de Desenvolvimento (CMS)
+* Desenvolvido por Rafael P da Costa Gorges [Protimus]
+* Data: 26/08/17
+*/
+
+/* Atributos padrões da página */
+body {
+	background-color: #d3d5d6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Remoção de espaço entre as colunas */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Estilização do container */
+.container p {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container .external {
+	color: #556B2F;
+}
+
+/* Exibição de row centralizado */ 
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+}
+
+/* Posição da página de login */
+.login-page {
+	margin-top: 90px;	
+}
+
+/* Estilização da coluna de informações com logo e texto */
+.brathena-info {
+	background: rgba(98,125,77,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
+	color: #fff;
+	height: 450px;
+	width:500px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+	border:1px solid #083611;
+    -webkit-box-shadow: #B3B3B3 7px 7px 7px;
+    -moz-box-shadow: #B3B3B3 7px 7px 7px; 
+	box-shadow: #B3B3B3 7px 7px 7px;
+}
+
+/* Estilização de texto da coluna de informações */
+.brathena-text a {
+	color: white;
+	font-size: 18px;
+	padding-top: 200px;
+}
+
+/* Tornar o conteúdo não ativo */
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+/* Formulário de registro */
+.regForm {
+	width: 500px;
+	margin-top: 10px;
+}

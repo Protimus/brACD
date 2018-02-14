@@ -1,0 +1,35 @@
+<div id="master">
+    <!-- Criando o container -->
+    <div class="container">
+        <!-- Atribuindo à classe para que não exista espaçamento entre as colunas -->
+        <div class="row justify-content-center center">
+            <!-- Criando columa de informações com logo e texto -->
+            <div class="col-lg-offset-6  brathena-info">
+                <div class="brathena-logo">
+                    <img src="../../../assets/images/logo.png" class="img-fluid">
+                    <div class="brathena-text centered">
+                        <a href="https://forum.brathena.org" class="typewrite" target="_blank" data-period="2000" data-type='[ "Faça traduções para o emulador!", "Reporte erros no emulador!", "Ajude na criação de projetos!"]'>
+                            <span class="wrap"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <!-- Criando a coluna para formulário de login -->
+            <div class="col-lg-offset-6 brathena-form" align="center">
+               <router-outlet></router-outlet>
+               <div class="col-sm-6">
+                    <div class="forgot">
+                        <span>
+                            <a href="" class="external">Esqueceu sua senha?</a>
+                            <br>
+                            <a href="registrar.html" class="external">Não tem uma conta? Cadastre-se </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <p>Desenvolvido por
+                <a href="https://forum.brathena.org" class="external">Protimus</a>
+                <br>Todos os direitos reservados. brAthena &copy 2017</p>
+        </div>
+    </div>
+</div>

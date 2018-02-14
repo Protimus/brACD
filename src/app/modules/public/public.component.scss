@@ -1,0 +1,160 @@
+/*
+* brAthena Central de Desenvolvimento (CMS)
+* Desenvolvido por Rafael P da Costa Gorges [Protimus]
+* Data: 26/08/17
+*/
+
+/* Atributos padrões da página */
+#master{
+
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-color: #d3d5d6
+  
+  }
+/* Remoção de espaço entre as colunas */
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+
+  > .col,
+  > [class*="col-"] {
+    padding-right: 0;
+    padding-left: 0;
+  }
+}
+
+/* Estilização do container */
+.container p {
+	text-align: center;
+	margin-top: 50px;
+}
+
+.container .external {
+	color: #556B2F;
+}
+
+/* Exibição de row centralizado */ 
+.centered {
+    text-align: center;
+    font-size: 0;
+}
+.centered > div {
+    float: none;
+    display: inline-block;
+    text-align: left;
+    font-size: 13px;
+}
+
+/* Posição da página de login */
+.center {
+	margin-top: 90px;	
+}
+
+/* Estilização da coluna de informações com logo e texto */
+.brathena-info {
+	background: rgba(98,125,77,1);
+	background: -moz-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#627d4d', endColorstr='#1f3b08', GradientType=1 );
+	color: #fff;
+	height: 450px;
+	width:500px;
+    -webkit-border-radius: 10px 0px 0px 10px;
+    -moz-border-radius: 10px 0px 0px 10px;
+	border-radius: 10px 0px 0px 10px;
+	border:1px solid #083611;
+    -webkit-box-shadow: #B3B3B3 7px 7px 7px;
+    -moz-box-shadow: #B3B3B3 7px 7px 7px; 
+	box-shadow: #B3B3B3 7px 7px 7px;
+}
+
+/* Estilização de texto da coluna de informações */
+.brathena-text a {
+	color: white;
+	font-size: 18px;
+	padding-top: 200px;
+}
+
+/* Tornar o conteúdo não ativo */
+.not-active {
+   pointer-events: none;
+   cursor: default;
+}
+
+/* Estilização da coluna de formulário */
+.brathena-form {
+	background-color: white;
+	height: 450px;
+    -webkit-border-radius: 0px 10px 10px 0px;
+    -moz-border-radius: 0px 10px 10px 0px;
+    border-radius: 0px 5px 10px 0px;
+    border:1px solid #083611;
+    -webkit-box-shadow: #B3B3B3 7px 7px 7px;
+    -moz-box-shadow: #B3B3B3 7px 7px 7px;
+    box-shadow: #B3B3B3 7px 7px 7px;
+}
+
+/* Estilização dos inputs para formulário de login e registro */
+input { 
+	box-shadow: 0 0 3px green; 
+	margin: 0px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #556B2F;
+    box-shadow: 0 1px 1px green, 0 0 8px green;
+    outline: 0 none;
+}
+
+/* Perda de senha */
+.forgot {
+	text-align: center;
+	font-size: 13px;
+	margin-bottom: 20px;
+	color: black;
+}
+
+/* Botão padronizado */
+.btn-custom {
+	background: rgba(98,125,77,1);
+	color: white;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	border-color: black;
+	box-shadow: none;
+}
+.btn-custom:hover,
+.btn-custom:focus,
+.btn-custom:active,
+.btn-custom.active {
+	background-color: #37561f;
+	border-color: black;
+	box-shadow: none;
+}
+
+.btn-custom.disabled:hover,
+.btn-custom.disabled:focus,
+.btn-custom.disabled:active,
+.btn-custom.disabled.active,
+.btn-custom[disabled]:hover,
+.btn-custom[disabled]:focus,
+.btn-custom[disabled]:active,
+.btn-custom[disabled].active,
+fieldset[disabled] .btn-custom:hover,
+fieldset[disabled] .btn-custom:focus,
+fieldset[disabled] .btn-custom:active,
+fieldset[disabled] .btn-custom.active {
+	background-color: #436926;
+	border-color: black;
+	box-shadow: none;
+}

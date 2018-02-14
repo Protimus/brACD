@@ -1,0 +1,39 @@
+/*
+* brAthena Central de Desenvolvimento (CMS)
+* Desenvolvido por Rafael P da Costa Gorges [Protimus]
+* Data: 26/08/17
+*/
+
+
+/* Estilização dos inputs para formulário de login e registro */
+input { 
+	box-shadow: 0 0 3px green; 
+	margin: 0px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #556B2F;
+    box-shadow: 0 1px 1px green, 0 0 8px green;
+    outline: 0 none;
+}
+
+
+/* Formulário de login */
+.loginForm {
+	width: 500px;
+	margin-top: 80px;
+}
+
+/* Botão padronizado */
+.btn-custom {
+	background: rgba(98,125,77,1);
+	color: white;
+	background: -moz-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(98,125,77,1)), color-stop(100%, rgba(31,59,8,1)));
+	background: -webkit-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -o-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: -ms-radial-gradient(center, ellipse cover, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	background: radial-gradient(ellipse at center, rgba(98,125,77,1) 0%, rgba(31,59,8,1) 100%);
+	border-color: black;
+	box-shadow: none;
+}
