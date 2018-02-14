@@ -5,7 +5,7 @@
 [NodeJS](https://nodejs.org/en/) versão v8.1.1<br/>
 [NPM](https://www.npmjs.com/) versão 5.6.0<br/>
 
-<h3>Ao clonar o projeto, não esqueça de instalar as dependencias com </h3>`npm install`
+<h3>Ao clonar o projeto, não esqueça de instalar as dependencias com <code>npm install</code> </h3>
 
 ## Servidor de Desenvolvimento
 
