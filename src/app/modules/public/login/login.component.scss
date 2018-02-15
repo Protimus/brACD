@@ -1,0 +1,25 @@
+/*
+* brAthena Central de Desenvolvimento (CMS)
+* Desenvolvido por Rafael P da Costa Gorges [Protimus]
+* Data: 26/08/17
+*/
+
+
+/* Estilização dos inputs para formulário de login e registro */
+input { 
+	box-shadow: 0 0 3px green; 
+	margin: 0px;
+}
+
+textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus {   
+    border-color: #556B2F;
+    box-shadow: 0 1px 1px green, 0 0 8px green;
+    outline: 0 none;
+}
+
+
+/* Formulário de login */
+.loginForm {
+	width: 500px;
+	margin-top: 80px;
+}

@@ -1,5 +1,7 @@
 # Não precisamos que as bibliotecas sejam enviadas ao GIT.
 # Elas devem ser baixadas pelo usuário através do bower [Protimus]
+node_modules/
+package-lock.json
 assets/components/angular/*
 assets/components/bootstrap/*
 assets/components/jquery/*

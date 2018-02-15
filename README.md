@@ -1,40 +1,26 @@
-# brADev - Central de Desenvolvimento #
+# ![brAthena](https://camo.githubusercontent.com/3858b95c804ef39869049d97ced55510a8450685/68747470733a2f2f692e696d6775722e636f6d2f49514b4b6254382e706e67)
 
-## O que é ##
+## Este projeto foi configurado com as seguintes tecnologias:<br>
+[Angular CLI](https://github.com/angular/angular-cli) versão 1.1.1.<br/>
+[NodeJS](https://nodejs.org/en/) versão v8.1.1<br/>
+[NPM](https://www.npmjs.com/) versão 5.6.0<br/>
 
-A central de desenvolvimentos do brAthena é um CMS utilizado para controlar as atividades de desenvolvimento do projeto.
-Aberto à todo público, é possível realizar traduções, criar códigos e reportar problemas.
+<h3>Ao clonar o projeto, não esqueça de instalar as dependencias com <code>npm install</code> </h3>
 
-## Estrutura de Arquivos ##
+## Servidor de Desenvolvimento
 
-* app: Contém todos os arquivos que fazem referência ao BackEnd do projeto e comunicação direta com o servidor.
+Execute `ng serve` para subir o servidor de desenvolvimento. Navegue para `http://localhost:4200/`. A aplicação irá recarregar automaticamente se você executar alguma mudança nos sources files
 
-* app/lib: Contém todas as bibliotecas em PHP que são utilizadas no BackEnd do projeto.
+## Build
 
-* assets: Contém todas as bibliotecas e frameworks utilizados pelo FrontEnd do projeto em páginas de layout.
+Execute `ng build` para buildar o projeto. Os artefatos construidos sero armazenados no diretório `dist/` . Use `-prod` para gerar um build de produção.
 
-* images: Contém todas as imagens utilizadas na exibição do FrontEnd do projeto.
+## Executando testes unitários
 
-* styles: Contém todos os arquivos que fazem referência à criação do FrontEnd do projeto.
+Digite `ng test` para executar testes unitrios via [Karma](https://karma-runner.github.io).
 
+## Testes e2e
 
-## Instalação ##
+Digite `ng e2e` para executar testes e2e via [Protractor](http://www.protractortest.org/).
+Antes de executar os testes, tenha certeza que você subiu o servidor com  `ng server`
 
-### Dependências de Instalação ###
-
-* Servidor Web - Ex.: Apache, Nginx, IIS.
-* PHP 5.7 ou superior.
-* SGBD - Ex.: MySQL, MariaDB.
-* NodeJS
-* Bower
-* Gulp
-* Bootstrap
-* AngularJS
-
-### Etapas de Instalação ###
-
-1. Instalação do NodeJS: https://nodejs.org/en/download/
-2. Instalação do bower
-- Com o prompt do nodejs aberto, digitar: npm install -g bower
-3. Instalação de dependências para o FrontEnd
-- Com o prompt do nodejs aberto, digitar: bower install

@@ -1,0 +1,18 @@
+<form class="regForm" role="form" name="regForm" novalidate>
+    <div class="form-group col-md-9">
+       <label><span class="fa fa-user">&nbsp;</span>Email</label>
+       <input type="email" name="email" class="form-control input-group-sm" placeholder="Digite um email válido" ng-model="user.email" required>
+   </div>
+   <div class="form-group col-md-9">
+       <label><span class="fa fa-key">&nbsp;</span>Senha</label>
+       <input type="password" name="password" class="form-control" placeholder="Digite uma senha" ng-model="user.password" required>
+     </div>
+   <div class="form-group col-md-9">
+       <label><span class="fa fa-birthday-cake">&nbsp;</span>Nascimento</label>
+       <input type="date" name="birthday" class="form-control" placeholder="Digite uma senha" ng-model="user.birthday" required>
+     </div>
+   <div class="col-sm-6">
+     <button type="submit" class="btn btn-default col-sm-offset-10">Cadastrar</button>
+     <button type="button" class="btn btn-default col-sm-offset-3" (click)="backToLogin($event)" value="Reset">Voltar</button>
+   </div>
+ </form> 
