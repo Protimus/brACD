@@ -13,7 +13,6 @@ const PUBLIC_ROUTES: Routes = [
         {path: 'register', component: RegisterUserComponent},
         {path: 'forgot-password', component: ForgotPasswordComponent}
     ]},
-    {path: '**', redirectTo: ''}
 ]
 
 export const routing: ModuleWithProviders = RouterModule.forChild(PUBLIC_ROUTES);
