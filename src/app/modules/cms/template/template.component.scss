@@ -1,42 +1,71 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-
-.logo{
-    margin-left: -13px;
-    background-color: #6c9a51
-}
+$green-principal:#6c9a51;
 
 .line{
-    border-bottom: 2px solid #6c9a51;    
+    border-bottom:4px solid $green-principal;    
 }
+
 .header-form > li{
     font-family: 'Roboto', sans-serif;
     display: inline-block;
     margin-right: 3em;
-    padding: 1.5em;
-    color:#6c9a51;
+    padding: 10px;
 }
 
-
-.shaped{
-    border: 1px solid #6c9a51;
+.btn-primary-outline{
+    border: 1px solid $green-principal;
+    background-color: white;
+    color: $green-principal;
+    transition: 0.5s;
 }
 
-.green{
-    color: #6c9a51;
+.btn-primary-outline:hover{
+    color: white;
+    background-color: $green-principal;
+    cursor: pointer;
 }
 
-.menu{
-    width: 90%;
-    background-color: blue;
+.header-form > li > a{
+    color:$green-principal;
+    text-decoration: none;
 }
+
 .header-form > li:hover{
     text-decoration: underline;
     cursor: pointer;
 }
 
-.row-eq-height {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-  }
+.menu{
+    background: url("../../../../assets/images/menu.png");
+}
+
+.nav-item{
+    border-bottom: 1px solid white;
+    background-color:rgba(0,0,0,.3);
+    transition: 0.5s;
+}
+.nav-item:hover{
+    background-color:rgba(0,0,0,.8);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items{
+    width: 113%;
+    margin-left: -14px;
+}
+
+
+.content{
+    border-radius: 10px;
+    background: url("../../../../assets/images/leaf.png") no-repeat right;
+}
+
+.footer{
+    border-top: 3px solid $green-principal;
+    line-height: 70px;
+}
+

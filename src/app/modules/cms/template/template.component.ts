@@ -7,9 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TemplateComponent implements OnInit {
 
+  year:number;
   constructor() { }
 
   ngOnInit() {
+    this.year = new Date().getFullYear();
   }
 
 }
