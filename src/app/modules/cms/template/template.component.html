@@ -1,5 +1,7 @@
 <nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 line">
-  <img class="navbar-brand col-sm-3 col-md-2 mr-0 img-responsive" src="../../../../assets/images/logo_cms.png" />
+  <div class="navbar-brand col-sm-3 col-md-2 mr-0 bg-green">
+    <img class="img-responsive img-logo" src="../../../../assets/images/logo_cms.png" />
+  </div>
   <ul class="nav mr-auto header-form list-inline">
     <li class="list-inline-item">
       <a href="#" class="nav-link">FÓRUM DE SUPORTE</a>
@@ -28,7 +30,7 @@
       <div class="sidebar-sticky">
         <ul class="nav flex-column menu-items">
           <li class="nav-item">
-            <a class="nav-link active" href="#">
+            <a class="nav-link active" [routerLink]="['estatisticas']">
               <span data-feather="home"></span>
               <i class="fa fa-chart-line"></i>&nbsp;&nbsp;Estatísticas
             </a>
@@ -75,7 +77,7 @@
 
 
     <div class="col-md-8 col-lg-8 col-xs-12 offset-md-1 offset-lg-1  content">
-      TESTE
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

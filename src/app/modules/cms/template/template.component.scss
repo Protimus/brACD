@@ -1,8 +1,18 @@
+@import '../../../../assets/colors.scss';
 @import url('https://fonts.googleapis.com/css?family=Roboto');
-$green-principal:#6c9a51;
 
 .line{
     border-bottom:4px solid $green-principal;    
+}
+
+.bg-green{
+    background-color: $green-principal
+}
+
+.img-logo{
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
 }
 
 .header-form > li{
