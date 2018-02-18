@@ -1,0 +1,81 @@
+@import '../../../../assets/colors.scss';
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+.line{
+    border-bottom:4px solid $green-principal;    
+}
+
+.bg-green{
+    background-color: $green-principal
+}
+
+.img-logo{
+    margin-left: auto;
+	margin-right: auto;
+	display: block;
+}
+
+.header-form > li{
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    margin-right: 3em;
+    padding: 10px;
+}
+
+.btn-primary-outline{
+    border: 1px solid $green-principal;
+    background-color: white;
+    color: $green-principal;
+    transition: 0.5s;
+}
+
+.btn-primary-outline:hover{
+    color: white;
+    background-color: $green-principal;
+    cursor: pointer;
+}
+
+.header-form > li > a{
+    color:$green-principal;
+    text-decoration: none;
+}
+
+.header-form > li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.menu{
+    background: url("../../../../assets/images/menu.png");
+}
+
+.nav-item{
+    border-bottom: 1px solid white;
+    background-color:rgba(0,0,0,.3);
+    transition: 0.5s;
+}
+.nav-item:hover{
+    background-color:rgba(0,0,0,.8);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-items{
+    width: 113%;
+    margin-left: -14px;
+}
+
+
+.content{
+    border-radius: 10px;
+    background: url("../../../../assets/images/leaf.png") no-repeat right;
+}
+
+.footer{
+    border-top: 3px solid $green-principal;
+    line-height: 70px;
+}
+

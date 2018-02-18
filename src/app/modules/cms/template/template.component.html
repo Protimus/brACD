@@ -1,0 +1,89 @@
+<nav class="navbar navbar-dark sticky-top flex-md-nowrap p-0 line">
+  <div class="navbar-brand col-sm-3 col-md-2 mr-0 bg-green">
+    <img class="img-responsive img-logo" src="../../../../assets/images/logo_cms.png" />
+  </div>
+  <ul class="nav mr-auto header-form list-inline">
+    <li class="list-inline-item">
+      <a href="#" class="nav-link">FÓRUM DE SUPORTE</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#" class="nav-link">GITHUB</a>
+    </li>
+    <li class="list-inline-item">
+      <a href="#" class="nav-link">PROJETOS</a>
+    </li>
+  </ul>
+  <div class="dropdown" style="margin-right:60px;">
+    <button class="btn btn-primary-outline dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+      aria-expanded="false">
+      <i class="fa fa-user"></i>&nbsp;&nbsp;Minha Conta
+    </button>
+    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+      <a class="dropdown-item" href="#">Editar dados</a>
+      <a class="dropdown-item" href="#">Sair</a>
+    </div>
+  </div>
+</nav>
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-light sidebar menu" style='height: 70vh;'>
+      <div class="sidebar-sticky">
+        <ul class="nav flex-column menu-items">
+          <li class="nav-item">
+            <a class="nav-link active" [routerLink]="['estatisticas']">
+              <span data-feather="home"></span>
+              <i class="fa fa-chart-line"></i>&nbsp;&nbsp;Estatísticas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="file"></span>
+              <i class="fa fa-server"></i>&nbsp;&nbsp;Metas
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="shopping-cart"></span>
+              <i class="fa fa-code"></i>&nbsp;&nbsp;Aprenda
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="users"></span>
+              <i class="fa fa-handshake"></i>&nbsp;&nbsp;Auxilie
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="bar-chart-2"></span>
+              <i class="fa fa-book"></i>&nbsp;&nbsp;Traduções
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              <i class="fa fa-bug"></i>&nbsp;&nbsp;Reportar
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span data-feather="layers"></span>
+              <i class="fa fa-id-card"></i>&nbsp;&nbsp;Contatos
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+
+    <div class="col-md-8 col-lg-8 col-xs-12 offset-md-1 offset-lg-1  content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="footer">
+    <p class="text-center">Desenvolvidor Por Marcus Cartágenes &copy;{{year}}</p>
+  </div>
+</footer>

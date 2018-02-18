@@ -14,6 +14,12 @@ export class LoginComponent implements OnInit {
       this.publicService.add({show: true})
   }
 
-  ngOnInit() {  }
+  ngOnInit() {  
+  }
+  
+  goToCms(event){
+    event.preventDefault();
+    this._router.navigate(['/cms/estatisticas'])
+  }
 
 }

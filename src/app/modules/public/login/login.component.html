@@ -12,6 +12,6 @@
         <input type="text" name="password" class="form-control" placeholder="Informe a sua senha" ng-model="user.password" required>
     </div>
     <div class="col-sm-6">
-        <button type="submit" class="btn btn-default col-sm-offset-3">Entrar</button>
+        <button type="submit" (click)="goToCms($event)" class="btn btn-default col-sm-offset-3">Entrar</button>
     </div>
 </form>
