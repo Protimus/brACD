@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import '../../../../assets/colors.scss';
+
+@mixin title-font {
+    font-family: 'Roboto', sans-serif;
+    color: $green-principal;
+    margin-top: 10px;
+    font-size: 2em;
+    text-shadow: 1px 0 0 #000, -1px 0 0 #000, 0 1px 0 #000, 0 -1px 0 #000, 1px 1px #000, -1px -1px 0 #000fff, 1px -1px 0 #000, -1px 1px 0 #fff;    font-weight: bolder;
+
+}
